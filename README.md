@@ -25,6 +25,10 @@ My goal is to build a strong foundation in neural architectures for language und
 | Attention Mechanisms | Q11–Q18 | [03-Attention-Mechanisms](03-Attention-Mechanisms/) |
 | Transformer Architecture | Q9–Q10, Q19–Q30 | [04-Transformer-Architecture](04-Transformer-Architecture/) |
 
+## What This Repository Demonstrates
+
+This repository contains my solved coursework questions, mathematical explanations, diagrams, and reflections from the MSc Deep Learning for NLP course. The goal is to demonstrate my understanding of both the theory and implementation logic behind modern NLP architectures.
+
 ## Key Implementations
 - Neural network backpropagation from scratch
 - RNN and LSTM implementation
