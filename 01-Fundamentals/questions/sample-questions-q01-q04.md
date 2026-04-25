@@ -31,7 +31,9 @@ Answer the following:
 (c) Update w and b using a learning rate of 0.01.
 (d) What would happen if the learning rate were set to 5.0 instead?
 
-Q3. Activation Functions — Analytic
+---
+
+## Q3. Activation Functions — Analytic
 
 Consider a deep network for Bangla named entity recognition, or NER.
 
@@ -41,7 +43,9 @@ How does the ReLU activation function address this, and what is one limitation R
 
 Hint: dying ReLU.
 
-Q4. Error Functions — Descriptive
+---
+
+## Q4. Error Functions — Descriptive
 
 You are building a Bangla text classifier that categorizes news articles into 5 categories:
 
