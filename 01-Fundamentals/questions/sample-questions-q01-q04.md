@@ -1,7 +1,7 @@
 
 # Sample Questions: Fundamentals
 
-This file contains the instructor-provided sample questions for the **Fundamentals** module of the **Deep Learning for NLP** course.
+This file contains the Professor-provided sample questions for the **Fundamentals** module of the **Deep Learning for NLP** course.
 
 ---
 
