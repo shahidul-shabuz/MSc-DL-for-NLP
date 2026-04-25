@@ -20,17 +20,18 @@ A single neuron has weight `w = 2.0`, bias `b = 1.0`, and uses MSE loss.
 
 For input `x = 3.0` and true label `y = 10.0`, the predicted output is:
 
-```text
-ŷ = w·x + b = 7.0
+`ŷ = w·x + b = 7.0`
 
 Answer the following:
 
-(a) Compute the MSE loss.
-(b) Compute ∂Loss/∂w and ∂Loss/∂b.
-(c) Update w and b using a learning rate of 0.01.
-(d) What would happen if the learning rate were set to 5.0 instead?
+**(a)** Compute the MSE loss.  
+**(b)** Compute `∂Loss/∂w` and `∂Loss/∂b`.  
+**(c)** Update `w` and `b` using a learning rate of `0.01`.  
+**(d)** What would happen if the learning rate were set to `5.0` instead?
 
-Q3. Activation Functions — Analytic
+---
+
+## Q3. Activation Functions — Analytic
 
 Consider a deep network for Bangla named entity recognition, or NER.
 
@@ -38,17 +39,19 @@ Explain why using the sigmoid activation in every hidden layer would cause the v
 
 How does the ReLU activation function address this, and what is one limitation ReLU introduces?
 
-Hint: dying ReLU.
+Hint: **dying ReLU**.
 
-Q4. Error Functions — Descriptive
+---
+
+## Q4. Error Functions — Descriptive
 
 You are building a Bangla text classifier that categorizes news articles into 5 categories:
 
-rajniti — politics
-khela — sports
-projukti — technology
-manobinodon — entertainment
-orthoniti — economics
+- `rajniti` — politics
+- `khela` — sports
+- `projukti` — technology
+- `manobinodon` — entertainment
+- `orthoniti` — economics
 
 Explain why categorical cross-entropy loss is the appropriate choice over MSE loss for this task.
 
