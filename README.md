@@ -1,13 +1,35 @@
-# MSc Deep Learning for NLP - Research Showcase
+# Deep Learning for NLP: MSc Coursework, Implementations, and Research Reflections
 
-This repository contains my implementation and analytical work for advanced NLP architectures during my MSc at DUET.
+## Overview
+This repository documents my learning journey from the Deep Learning for NLP course during the 1st semester of my MSc program at DUET.
 
-## 🧠 Key Research Topics Covered
-* **Optimization & Fundamentals**: In-depth analysis of Backpropagation and Gradient Descent mechanics.
-* **Sequential Modeling**: Implementation of Vanilla RNNs and LSTMs with a focus on gating mechanisms and the vanishing gradient problem.
-* **Attention Mechanisms**: Detailed work on Self-Attention (Q/K/V), Multi-Head Attention, and Scaling factors ($1/\sqrt{d_k}$).
-* **Transformer Architectures**: Analysis of Encoder-Decoder structures, Residual Connections, and Layer Normalization.
+It includes mathematical notes, implementation exercises, experimental notebooks, and research reflections on core deep learning architectures used in modern NLP.
 
-## 🛠️ Implementation Highlights
-* **[Link to Code]**: LSTM implementation for context shifting in Bangla sentences[cite: 1].
-* **[Link to Code]**: From-scratch implementation of a Transformer Encoder layer[cite: 1].
+## Motivation
+My goal is to build a strong foundation in neural architectures for language understanding and generation, especially sequence models, attention mechanisms, and transformer-based models.
+
+## Topics Covered
+| Module | Topics | Output |
+|---|---|---|
+| 01 Fundamentals | Backpropagation, Gradient Descent, Activation Functions, Loss Functions | Notes + from-scratch implementation |
+| 02 Sequential Models | RNN, LSTM, Vanishing Gradient | Notes + experiments |
+| 03 Attention Mechanisms | Q/K/V, Self-Attention, Multi-Head Attention, Scaling | Notes + attention implementation |
+| 04 Transformer Architecture | Positional Encoding, LayerNorm, Residual Connections, Encoder-Decoder | Transformer encoder implementation |
+| 05 Mini Projects | Bangla NLP, classification, sequence modeling | Applied experiments |
+
+## Key Implementations
+- Neural network backpropagation from scratch
+- RNN and LSTM implementation
+- Self-attention from scratch
+- Multi-head attention implementation
+- Transformer encoder layer from scratch
+- Bangla NLP sequence modeling experiments
+
+## Research Reflection
+Through this course, I developed a deeper understanding of how neural architectures model language. I became especially interested in attention-based models and their applications to low-resource languages such as Bangla.
+
+## How to Run
+```bash
+git clone https://github.com/shahidul-shabuz/MSc-DL-for-NLP.git
+cd MSc-DL-for-NLP
+pip install -r requirements.txt
