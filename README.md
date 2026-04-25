@@ -17,6 +17,14 @@ My goal is to build a strong foundation in neural architectures for language und
 | 04 Transformer Architecture | Positional Encoding, LayerNorm, Residual Connections, Encoder-Decoder | Transformer encoder implementation |
 | 05 Mini Projects | Bangla NLP, classification, sequence modeling | Applied experiments |
 
+## Solved Course Questions
+| Module | Questions | Folder |
+|---|---:|---|
+| Fundamentals | Q1–Q4 | [01-Fundamentals](01-Fundamentals/) |
+| Sequential Models | Q5–Q8 | [02-Sequential-Models](02-Sequential-Models/) |
+| Attention Mechanisms | Q11–Q18 | [03-Attention-Mechanisms](03-Attention-Mechanisms/) |
+| Transformer Architecture | Q9–Q10, Q19–Q30 | [04-Transformer-Architecture](04-Transformer-Architecture/) |
+
 ## Key Implementations
 - Neural network backpropagation from scratch
 - RNN and LSTM implementation
