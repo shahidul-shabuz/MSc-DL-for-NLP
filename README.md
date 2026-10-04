@@ -11,7 +11,7 @@ The solutions work through the architecture behind modern NLP, from backpropagat
 | [01 Fundamentals](01-Fundamentals/) | Backpropagation, gradient descent, activation functions, loss functions, softmax | Q1–Q4 | ✅ Complete |
 | [02 Sequential Models](02-Sequential-Models/) | RNN, LSTM, encoder-decoder, information bottleneck | Q5–Q10 | ✅ Complete |
 | [03 Attention Mechanisms](03-Attention-Mechanisms/) | Self-attention, Q/K/V, scaling by √d_k, multi-head attention | Q11–Q18 | ✅ Complete |
-| [04 Transformer Architecture](04-Transformer-Architecture/) | Positional encoding, LayerNorm, residual connections, encoder and decoder | Q19–Q30 | 🔄 Q19–Q28 complete; Q29–Q30 in progress |
+| [04 Transformer Architecture](04-Transformer-Architecture/) | Positional encoding, LayerNorm, residual connections, encoder and decoder | Q19–Q30 | ✅ Complete |
 
 ## Math covered
 
@@ -22,6 +22,7 @@ The solutions work through the architecture behind modern NLP, from backpropagat
 - **Attention:** scaled dot-product attention (worked example), Var(q·k) = d_k and the √d_k correction, the softmax Jacobian under saturation, why Q = K = V = x fails
 - **Multi-head attention:** parameter count (4·d_model² = 1,048,576 for d_model = 512) and why h heads of size d_model/h cost the same as one full head
 - **Transformer components:** sinusoidal positional encoding (worked example), LayerNorm vs. BatchNorm with padding (worked example), the residual gradient ∂L/∂x_l = ∂L/∂x_(l+1)·(1 + ∂F/∂x_l), the causal decoder mask
+- **Comparison:** additive (Bahdanau) vs. scaled dot-product attention, and cross-attention vs. self-attention
 
 ## Repository structure
 
@@ -45,7 +46,7 @@ All content is Markdown and renders directly on GitHub, including equations and 
 
 ## A note on preparation
 
-Some explanations and diagrams were drafted with the help of AI tools (Claude, Gemini), then reviewed, corrected and edited by me. Numerical results have been re-computed independently.
+Some explanations and diagrams were drafted with the help of AI tools (Claude, Gemini), including the solutions to Q29–Q30. All content was then reviewed, corrected and edited by me, and numerical results were re-computed independently.
 
 ## Author
 

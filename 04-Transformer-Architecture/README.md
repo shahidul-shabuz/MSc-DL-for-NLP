@@ -9,6 +9,7 @@ Solved exercises on the full Transformer architecture.
 - Residual connections and gradient flow
 - Encoder layer and the 6-layer encoder stack
 - Decoder sub-layers and the causal mask
+- The full translation pipeline, and how Bahdanau attention relates to self-attention
 
 ## Solved Questions
 | Question | Topic | Solution |
@@ -23,7 +24,7 @@ Solved exercises on the full Transformer architecture.
 | Q26 | Encoder stack: layer-by-layer refinement | [Solution](solutions/q26-encoder-stack.md) |
 | Q27 | Decoder sub-layers and masking | [Solution](solutions/q27-decoder-sublayers.md) |
 | Q28 | Decoder causal mask | [Solution](solutions/q28-decoder-mask.md) |
-| Q29 | Full translation pipeline | 🔄 In progress |
-| Q30 | Bahdanau attention vs. self-attention | 🔄 In progress |
+| Q29 | Full translation pipeline | [Solution](solutions/q29-full-pipeline.md) |
+| Q30 | Bahdanau attention vs. self-attention | [Solution](solutions/q30-bahdanau-vs-self-attention.md) |
 
 Questions: [sample-questions-q19-q30.md](questions/sample-questions-q19-q30.md)
