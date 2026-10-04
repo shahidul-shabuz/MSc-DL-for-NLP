@@ -5,8 +5,8 @@ Worked solutions and mathematical notes from the **Deep Learning for NLP** cours
 | | |
 |---|---|
 | **Course** | Deep Learning for NLP — M.Sc. in CSE, DUET |
-| **Instructor** | [Prof. Dr. Fazlul Hasan Siddiqui](https://profile.duet.ac.bd/u/siddiqui), Dept. of CSE, DUET |
-| **Grade** | A+ (4.00 / 4.00) |
+| **Course teacher** | [Prof. Dr. Fazlul Hasan Siddiqui](https://profile.duet.ac.bd/u/siddiqui), Professor, Department of Computer Science and Engineering, DUET |
+| **Grade** | A+ (above 90% marks; GPA 4.00 / 4.00) |
 
 The solutions work through the architecture behind modern NLP, from backpropagation to the Transformer decoder. Each one includes step-by-step derivations, worked numerical examples and diagrams, with Bangla NLP tasks as running examples.
 
