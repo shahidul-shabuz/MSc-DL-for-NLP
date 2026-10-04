@@ -1,47 +1,57 @@
-# Deep Learning for NLP: MSc Coursework, Implementations, and Research Reflections
+# Deep Learning for NLP — MSc Coursework Notes
 
-## Overview
-This repository documents my learning journey from the Deep Learning for NLP course during the 1st semester of my MSc program at DUET.
+Worked solutions and mathematical notes from the **Deep Learning for NLP** course, M.Sc. in CSE, Dhaka University of Engineering & Technology (DUET), 1st semester (2026).
 
-It includes mathematical notes, implementation exercises, experimental notebooks, and research reflections on core deep learning architectures used in modern NLP.
+The solutions work through the architecture behind modern NLP, from backpropagation to the Transformer decoder. Each one includes step-by-step derivations, worked numerical examples and diagrams, with Bangla NLP tasks as running examples.
 
-## Motivation
-My goal is to build a strong foundation in neural architectures for language understanding and generation, especially sequence models, attention mechanisms, and transformer-based models.
+## Progress
 
-## Topics Covered
-| Module | Topics | Output |
-|---|---|---|
-| 01 Fundamentals | Backpropagation, Gradient Descent, Activation Functions, Loss Functions | Notes + from-scratch implementation |
-| 02 Sequential Models | RNN, LSTM, Vanishing Gradient | Notes + experiments |
-| 03 Attention Mechanisms | Q/K/V, Self-Attention, Multi-Head Attention, Scaling | Notes + attention implementation |
-| 04 Transformer Architecture | Positional Encoding, LayerNorm, Residual Connections, Encoder-Decoder | Transformer encoder implementation |
-| 05 Mini Projects | Bangla NLP, classification, sequence modeling | Applied experiments |
+| Module | Topics | Questions | Status |
+|---|---|---|---|
+| [01 Fundamentals](01-Fundamentals/) | Backpropagation, gradient descent, activation functions, loss functions, softmax | Q1–Q4 | ✅ Complete |
+| [02 Sequential Models](02-Sequential-Models/) | RNN, LSTM, encoder-decoder, information bottleneck | Q5–Q10 | ✅ Complete |
+| [03 Attention Mechanisms](03-Attention-Mechanisms/) | Self-attention, Q/K/V, scaling by √d_k, multi-head attention | Q11–Q18 | ✅ Complete |
+| [04 Transformer Architecture](04-Transformer-Architecture/) | Positional encoding, LayerNorm, residual connections, encoder and decoder | Q19–Q30 | 🔄 Q19–Q28 complete; Q29–Q30 in progress |
 
-## Solved Course Questions
-| Module | Questions | Folder |
-|---|---:|---|
-| Fundamentals | Q1–Q4 | [01-Fundamentals](01-Fundamentals/) |
-| Sequential Models | Q5–Q8 | [02-Sequential-Models](02-Sequential-Models/) |
-| Attention Mechanisms | Q11–Q18 | [03-Attention-Mechanisms](03-Attention-Mechanisms/) |
-| Transformer Architecture | Q9–Q10, Q19–Q30 | [04-Transformer-Architecture](04-Transformer-Architecture/) |
+## Math covered
 
-## What This Repository Demonstrates
+- **Optimization:** chain rule and backpropagation, MSE gradients for a single neuron, effect of the learning rate
+- **Activations and losses:** sigmoid derivative bound (σ′ ≤ 0.25) and vanishing gradients, ReLU and dying ReLU, softmax with categorical cross-entropy
+- **Recurrent models:** RNN hidden-state recurrence (worked example), LSTM gate equations, why the additive cell-state update preserves gradients
+- **Seq2seq:** the context-vector bottleneck and its link to BLEU degradation on long sentences
+- **Attention:** scaled dot-product attention (worked example), Var(q·k) = d_k and the √d_k correction, the softmax Jacobian under saturation, why Q = K = V = x fails
+- **Multi-head attention:** parameter count (4·d_model² = 1,048,576 for d_model = 512) and why h heads of size d_model/h cost the same as one full head
+- **Transformer components:** sinusoidal positional encoding (worked example), LayerNorm vs. BatchNorm with padding (worked example), the residual gradient ∂L/∂x_l = ∂L/∂x_(l+1)·(1 + ∂F/∂x_l), the causal decoder mask
 
-This repository contains my solved coursework questions, mathematical explanations, diagrams, and reflections from the MSc Deep Learning for NLP course. The goal is to demonstrate my understanding of both the theory and implementation logic behind modern NLP architectures.
+## Repository structure
 
-## Key Implementations
-- Neural network backpropagation from scratch
-- RNN and LSTM implementation
-- Self-attention from scratch
-- Multi-head attention implementation
-- Transformer encoder layer from scratch
-- Bangla NLP sequence modeling experiments
+```
+MSc-DL-for-NLP/
+├── 01-Fundamentals/
+├── 02-Sequential-Models/
+├── 03-Attention-Mechanisms/
+├── 04-Transformer-Architecture/
+│   ├── questions/     # Course sample questions
+│   ├── solutions/     # Worked solutions, one file per question
+│   └── figures/       # Diagrams used in the solutions
+└── LICENSE
+```
 
-## Research Reflection
-Through this course, I developed a deeper understanding of how neural architectures model language. I became especially interested in attention-based models and their applications to low-resource languages such as Bangla.
+Each module follows the same `questions/` · `solutions/` · `figures/` layout.
 
-## How to Run
-```bash
-git clone https://github.com/shahidul-shabuz/MSc-DL-for-NLP.git
-cd MSc-DL-for-NLP
-pip install -r requirements.txt
+## How to use
+
+All content is Markdown and renders directly on GitHub, including equations and Mermaid diagrams; no setup is needed. Start with [01-Fundamentals](01-Fundamentals/), since later modules build on backpropagation and the chain rule.
+
+## A note on preparation
+
+Some explanations and diagrams were drafted with the help of AI tools (Claude, Gemini), then reviewed, corrected and edited by me. Numerical results have been re-computed independently.
+
+## Author
+
+**Md Shahidul Islam Shabuz** — Assistant Professor, Dept. of CSE, RSTU; M.Sc. candidate, DUET
+[Website](https://shahidul-shabuz.github.io/) · [Google Scholar](https://scholar.google.com/citations?user=VDtX90sAAAAJ&hl=en) · [ORCID](https://orcid.org/0009-0008-8271-888X)
+
+## License
+
+[MIT](LICENSE)
